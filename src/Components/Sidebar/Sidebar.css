@@ -1,0 +1,90 @@
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 2.5rem 1.5rem;
+}
+
+.sidebar img {
+    width: 2rem;
+}
+
+.sidebar .menu {
+    display: block;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.sidebar .newchat {
+    margin-top: 5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #e6eaf1;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    font-size: 1.4rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s;
+
+    .recenttitle {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.sidebar .recententry {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem 4rem 1rem 1rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    color: #282828;
+    cursor: pointer;
+    font-size: 1.4rem;
+
+    &:hover {
+        background-color: #e2e6eb;
+
+    }
+}
+
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidebar .bottomitem {
+    padding-right: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    .sidebar {
+        display: none;
+    }
+}
